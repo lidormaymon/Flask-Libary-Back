@@ -473,7 +473,7 @@ def update_loan(id):
 #End function update loan
 
 #Function of returning loan
-@app.route('/deleteLoan/<int:loan_id>', methods=['DELETE'])
+@app.route('/delete-loan/<int:loan_id>', methods=['DELETE'])
 def delete_loan(loan_id):
     loan = Loans.query.get(loan_id)
     if loan:
